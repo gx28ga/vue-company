@@ -1,7 +1,7 @@
 <template>
   <div class='properties-section content-area'>
     <div class='container'>
-      <el-row>
+      <el-row :gutter="30">
         <el-col :span='16'>
           <!-- Option bar start -->
           <div class='option-bar d-none d-xl-block d-lg-block d-md-block d-sm-block'>
@@ -9,22 +9,22 @@
               <el-col :span='12'>
                 <div class='sorting-options2'>
                   <span class='sort'>Sort by:</span>
-                  <select class='selectpicker search-fields' name='default-order'>
-                    <option>Default Order</option>
-                    <option>Price High to Low</option>
-                    <option>Price: Low to High</option>
-                    <option>Newest Properties</option>
-                    <option>Oldest Properties</option>
-                  </select>
+                  <el-select class='selectpicker search-fields' v-model="form.item9">
+                    <el-option value="Default">Default</el-option>
+                    <el-option value="Price High to Low">Price High to Low</el-option>
+                    <el-option value="Price: Low to High">Price: Low to High</el-option>
+                    <el-option value="Newest Propertie">Newest Properties</el-option>
+                    <el-option value="Oldest Properties">Oldest Properties</el-option>
+                  </el-select>
                 </div>
               </el-col>
               <el-col :span='12'>
                 <div class='sorting-options'>
                   <a href='properties-list-rightside.html' class='change-view-btn active-view-btn'>
-                    <i class='el-icon-s-unfold'></i>
+                    <i class='fa fa-th-list'></i>
                   </a>
                   <a href='properties-grid-rightside.html' class='change-view-btn'>
-                    <i class='el-icon-menu'></i>
+                    <i class='fa fa-th-large'></i>
                   </a>
                 </div>
               </el-col>
@@ -58,7 +58,7 @@
                     </h3>
                     <h5 class='location'>
                       <a href='properties-details.html'>
-                        <i class='el-icon-location-information'></i>20-21 Kathal St. Tampa City, FL
+                        <i class='flaticon-pin'></i>20-21 Kathal St. Tampa City, FL
                       </a>
                     </h5>
                   </div>
@@ -78,10 +78,10 @@
                   </ul>
                   <div class='footer'>
                     <a href='#' tabindex='0'>
-                      <i class='el-icon-user-solid'></i> Jhon Doe
+                      <i class='flaticon-people'></i> Jhon Doe
                     </a>
                     <span>
-                      <i class='el-icon-date'></i>5 Days ago
+                      <i class='flaticon-calendar'></i>5 Days ago
                     </span>
                   </div>
                 </div>
@@ -115,7 +115,7 @@
                     </h3>
                     <h5 class='location'>
                       <a href='properties-details.html'>
-                        <i class='el-icon-location-information'></i>20-21 Kathal St. Tampa City, FL
+                        <i class='flaticon-pin'></i>20-21 Kathal St. Tampa City, FL
                       </a>
                     </h5>
                   </div>
@@ -135,10 +135,10 @@
                   </ul>
                   <div class='footer'>
                     <a href='#' tabindex='0'>
-                      <i class='el-icon-user-solid'></i> Jhon Doe
+                      <i class='flaticon-people'></i> Jhon Doe
                     </a>
                     <span>
-                      <i class='el-icon-date'></i>5 Days ago
+                      <i class='flaticon-calendar'></i>5 Days ago
                     </span>
                   </div>
                 </div>
@@ -172,7 +172,7 @@
                     </h3>
                     <h5 class='location'>
                       <a href='properties-details.html'>
-                        <i class='el-icon-location-information'></i>20-21 Kathal St. Tampa City, FL
+                        <i class='flaticon-pin'></i>20-21 Kathal St. Tampa City, FL
                       </a>
                     </h5>
                   </div>
@@ -192,10 +192,10 @@
                   </ul>
                   <div class='footer'>
                     <a href='#' tabindex='0'>
-                      <i class='el-icon-user-solid'></i> Jhon Doe
+                      <i class='flaticon-people'></i> Jhon Doe
                     </a>
                     <span>
-                      <i class='el-icon-date'></i>5 Days ago
+                      <i class='flaticon-calendar'></i>5 Days ago
                     </span>
                   </div>
                 </div>
@@ -229,7 +229,7 @@
                     </h3>
                     <h5 class='location'>
                       <a href='properties-details.html'>
-                        <i class='el-icon-location-information'></i>20-21 Kathal St. Tampa City, FL
+                        <i class='flaticon-pin'></i>20-21 Kathal St. Tampa City, FL
                       </a>
                     </h5>
                   </div>
@@ -249,10 +249,10 @@
                   </ul>
                   <div class='footer'>
                     <a href='#' tabindex='0'>
-                      <i class='el-icon-user-solid'></i> Jhon Doe
+                      <i class='flaticon-people'></i> Jhon Doe
                     </a>
                     <span>
-                      <i class='el-icon-date'></i>5 Days ago
+                      <i class='flaticon-calendar'></i>5 Days ago
                     </span>
                   </div>
                 </div>
@@ -286,7 +286,7 @@
                     </h3>
                     <h5 class='location'>
                       <a href='properties-details.html'>
-                        <i class='el-icon-location-information'></i>20-21 Kathal St. Tampa City, FL
+                        <i class='flaticon-pin'></i>20-21 Kathal St. Tampa City, FL
                       </a>
                     </h5>
                   </div>
@@ -306,10 +306,10 @@
                   </ul>
                   <div class='footer'>
                     <a href='#' tabindex='0'>
-                      <i class='el-icon-user-solid'></i> Jhon Doe
+                      <i class='flaticon-people'></i> Jhon Doe
                     </a>
                     <span>
-                      <i class='el-icon-date'></i>5 Days ago
+                      <i class='flaticon-calendar'></i>5 Days ago
                     </span>
                   </div>
                 </div>
@@ -343,7 +343,7 @@
                     </h3>
                     <h5 class='location'>
                       <a href='properties-details.html'>
-                        <i class='el-icon-location-information'></i>20-21 Kathal St. Tampa City, FL
+                        <i class='flaticon-pin'></i>20-21 Kathal St. Tampa City, FL
                       </a>
                     </h5>
                   </div>
@@ -363,10 +363,10 @@
                   </ul>
                   <div class='footer'>
                     <a href='#' tabindex='0'>
-                      <i class='el-icon-user-solid'></i> Jhon Doe
+                      <i class='flaticon-people'></i> Jhon Doe
                     </a>
                     <span>
-                      <i class='el-icon-date'></i>5 Days ago
+                      <i class='flaticon-calendar'></i>5 Days ago
                     </span>
                   </div>
                 </div>
@@ -400,7 +400,7 @@
                     </h3>
                     <h5 class='location'>
                       <a href='properties-details.html'>
-                        <i class='el-icon-location-information'></i>20-21 Kathal St. Tampa City, FL
+                        <i class='flaticon-pin'></i>20-21 Kathal St. Tampa City, FL
                       </a>
                     </h5>
                   </div>
@@ -420,10 +420,10 @@
                   </ul>
                   <div class='footer'>
                     <a href='#' tabindex='0'>
-                      <i class='el-icon-user-solid'></i> Jhon Doe
+                      <i class='flaticon-people'></i> Jhon Doe
                     </a>
                     <span>
-                      <i class='el-icon-date'></i>5 Days ago
+                      <i class='flaticon-calendar'></i>5 Days ago
                     </span>
                   </div>
                 </div>
@@ -457,7 +457,7 @@
                     </h3>
                     <h5 class='location'>
                       <a href='properties-details.html'>
-                        <i class='el-icon-location-information'></i>20-21 Kathal St. Tampa City, FL
+                        <i class='flaticon-pin'></i>20-21 Kathal St. Tampa City, FL
                       </a>
                     </h5>
                   </div>
@@ -477,10 +477,10 @@
                   </ul>
                   <div class='footer'>
                     <a href='#' tabindex='0'>
-                      <i class='el-icon-user-solid'></i> Jhon Doe
+                      <i class='flaticon-people'></i> Jhon Doe
                     </a>
                     <span>
-                      <i class='el-icon-date'></i>5 Days ago
+                      <i class='flaticon-calendar'></i>5 Days ago
                     </span>
                   </div>
                 </div>
@@ -492,19 +492,7 @@
             <nav aria-label='Page navigation example'>
               <ul class='pagination'>
                 <li class='page-item'>
-                  <a class='page-link' href='#'>Prev</a>
-                </li>
-                <li class='page-item'>
-                  <a class='page-link active' href='#'>1</a>
-                </li>
-                <li class='page-item'>
-                  <a class='page-link' href='properties-list-leftsidebar.html'>2</a>
-                </li>
-                <li class='page-item'>
-                  <a class='page-link' href='properties-list-fullwidth.html'>3</a>
-                </li>
-                <li class='page-item'>
-                  <a class='page-link' href='properties-list-leftsidebar.html'>Next</a>
+                  <a class='page-link' href='#'>1</a>
                 </li>
               </ul>
             </nav>
@@ -803,7 +791,8 @@ export default {
         item5: '',
         item6: '',
         item7: '',
-        item8: ''
+        item8: '',
+        item9: ''
       },
       options: [
         {

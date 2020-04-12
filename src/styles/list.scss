@@ -6520,3 +6520,28 @@ table th {
         }
     }
 }
+.change-view-btn {
+    border-radius: 2px;
+    background: transparent;
+    padding: 5px 9px;
+    margin: 0 2px;
+    display: inline-block;
+    color: #ff214f;
+    border: solid 1px #ff214f;
+    &:hover {
+        background: #ff214f;
+    }
+}
+.active-view-btn {
+    background: #ff214f;
+    border: solid 1px #ff214f;
+    color: #fff !important;
+    padding: 5px 9px;
+    &:hover{
+        border: solid 1px #ff214f;
+    }
+}
+.price-box span {
+    color: #ff214f;
+    font-weight: 700;
+}
