@@ -4,8 +4,8 @@
       <router-link to="/" tag="h1">
         <img src="../assets/logo.png" class="site-logo" />
       </router-link>
-      <div class="navbar">
-        <ul class="navbar-nav">
+      <div class="head-nav">
+        <ul class="head-nav-nav">
           <li class="active"><router-link tag="a" to="/">首页</router-link></li>
           <li><router-link tag="a" to="/about">产品</router-link></li>
           <li class="menu-item-has-children">
@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .header {
   position: relative;
   h1 {
@@ -61,12 +61,12 @@ export default {
     margin-left: 15px;
     vertical-align: middle;
   }
-  .navbar {
+  .head-nav {
     float: right;
     margin-right: 220px;
     padding-left: 15px;
     padding-right: 15px;
-    .navbar-nav {
+    .head-nav-nav {
       float: left;
       & > li {
         float: left;

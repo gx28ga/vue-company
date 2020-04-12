@@ -553,8 +553,14 @@
 
 <script>
 import HomeSwiper from '@/components/HomeSwiper/index'
+
 export default {
   components: { HomeSwiper },
+  data() {
+    return {
+      reload: true
+    }
+  },
   mounted() {}
 }
 </script>
