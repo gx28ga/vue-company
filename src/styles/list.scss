@@ -48,6 +48,8 @@ body {
 a {
   cursor: pointer;
   color: #4d4d4d;
+  text-decoration: none;
+  background-color: transparent
 }
 
 a:hover {
@@ -1248,10 +1250,12 @@ input[type='checkbox']:checked + label:before {
   border: none;
   width: 100%;
   outline: none;
+  background: #ff214f;
 }
 
 .search-button:hover {
-  color: #fff;
+    color: #fff;
+    background: #ea1945;
 }
 
 .inline-search-area {
@@ -2871,13 +2875,25 @@ footer {
 }
 
 /** Recent properties start **/
+.mb-4{
+    margin-bottom: 1.5rem;
+}
+.pr-3{
+    padding-right: 1rem;
+}
+.recent-properties .media {
+    display: flex;
+    align-items: flex-start;
+}
 .recent-properties .media img {
   width: 60px;
   border-radius: 2px;
+  vertical-align: middle;
+  border-style: none;
 }
 
 .recent-properties .media h5 {
-  margin-bottom: 7px;
+  margin: 0;
   font-weight: 500;
 }
 
@@ -3639,7 +3655,6 @@ footer {
   background: #fff;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
-
 .sidebar-left {
   margin: 0 0 30px 0;
   background: #fff;
@@ -6484,4 +6499,24 @@ table th {
   .banner-max-height img {
     max-height: 300px;
   }
+}
+.se-mt{
+    margin-bottom: 1rem;
+    width:100%
+}
+.show-more-options {
+    color: #ff214f;
+}
+.collapse{
+    .el-checkbox-group {
+        display: flex;
+        flex-direction: column;
+        .el-checkbox {
+            margin-bottom: 18px;
+            color: #4e4d4d;
+        }
+        .el-checkbox__label{
+            padding-left: 15px;
+        }
+    }
 }
