@@ -555,12 +555,20 @@
 import HomeSwiper from '@/components/HomeSwiper/index'
 
 export default {
+  beforeRouteEnter(to, from, next) {
+    if (from.name !== 'home' && from.name !== null) {
+      setTimeout(() => {
+        console.log(from.name)
+        location.reload()
+      }, 200)
+    }
+    next()
+  },
   components: { HomeSwiper },
   data() {
     return {
       reload: true
     }
-  },
-  mounted() {}
+  }
 }
 </script>
