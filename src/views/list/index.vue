@@ -2,6 +2,282 @@
   <div class='properties-section content-area'>
     <div class='container'>
       <el-row :gutter="30">
+        <el-col :span='8'>
+          <div class='sidebar-right'>
+            <!-- Advanced search start -->
+            <div class='widget advanced-search'>
+              <h3 class='sidebar-title'>Advanced Search</h3>
+              <div class='s-border'></div>
+              <el-select class='se-mt' v-model='form.item1'>
+                <el-option value='All Status'>All Status</el-option>
+                <el-option value='For Sale'>For Sale</el-option>
+                <el-option value='For Rent'>For Rent</el-option>
+              </el-select>
+              <el-select class='se-mt' v-model='form.item2'>
+                <el-option
+                  v-for='(item, index) in options'
+                  :key='`${index}_item2`'
+                  :label='item.label'
+                  :value='item.value'
+                ></el-option>
+              </el-select>
+              <el-select class='se-mt' v-model='form.item3'>
+                <el-option
+                  v-for='(item, index) in options'
+                  :key='`${index}_item3`'
+                  :label='item.label'
+                  :value='item.value'
+                ></el-option>
+              </el-select>
+              <el-select class='se-mt' v-model='form.item4'>
+                <el-option
+                  v-for='(item, index) in options'
+                  :key='`${index}_item4`'
+                  :label='item.label'
+                  :value='item.value'
+                ></el-option>
+              </el-select>
+              <el-row :gutter="30">
+                <el-col :span='12'>
+                   <el-select class='se-mt' v-model='form.item5'>
+                    <el-option
+                      v-for='(item, index) in options'
+                      :key='`${index}_item5`'
+                      :label='item.label'
+                      :value='item.value'
+                    ></el-option>
+                  </el-select>
+                </el-col>
+                <el-col :span='12'>
+                  <el-select class='se-mt' v-model='form.item6'>
+                    <el-option
+                      v-for='(item, index) in options'
+                      :key='`${index}_item6`'
+                      :label='item.label'
+                      :value='item.value'
+                    ></el-option>
+                  </el-select>
+                </el-col>
+              </el-row>
+              <el-row :gutter="30">
+                <el-col :span='12'>
+                  <el-select class='se-mt' v-model='form.item7'>
+                    <el-option
+                      v-for='(item, index) in options'
+                      :key='`${index}_item7`'
+                      :label='item.label'
+                      :value='item.value'
+                    ></el-option>
+                  </el-select>
+                </el-col>
+                <el-col :span='12'>
+                  <el-select class='se-mt' v-model='form.item8'>
+                    <el-option
+                      v-for='(item, index) in options'
+                      :key='`${index}_item8`'
+                      :label='item.label'
+                      :value='item.value'
+                    ></el-option>
+                  </el-select>
+                </el-col>
+              </el-row>
+              <div class="range-slider">
+                  <label>Area</label>
+                  <el-slider
+                    v-model="slider1Value"
+                    range
+                   :marks="marks1">
+                  </el-slider>
+              </div>
+              <div class="range-slider">
+                  <label>Price</label>
+                  <el-slider
+                    v-model="slider2Value"
+                    range
+                   :marks="marks2">
+                  </el-slider>
+              </div>
+              <a class="show-more-options" @click="isFeaturesShow = !isFeaturesShow">
+                  <i class="fa fa-plus-circle"></i> Other Features
+              </a>
+              <div v-if="isFeaturesShow" class="collapse">
+                  <h3 class="sidebar-title">Features</h3>
+                  <div class="s-border"></div>
+                  <el-checkbox-group v-model="checkList">
+                    <el-checkbox label="Air Condition"></el-checkbox>
+                    <el-checkbox label="Places to seat"></el-checkbox>
+                    <el-checkbox label="Swimming Pool"></el-checkbox>
+                    <el-checkbox label="Free Parking"></el-checkbox>
+                    <el-checkbox label="Central Heating"></el-checkbox>
+                    <el-checkbox label="Laundry Room"></el-checkbox>
+                    <el-checkbox label="Window Covering"></el-checkbox>
+                    <el-checkbox label="Alarm"></el-checkbox>
+                  </el-checkbox-group>
+                  <br>
+              </div>
+               <div class="form-group mb-0">
+                  <button class="search-button">Search</button>
+              </div>
+            </div>
+            <!-- Recent properties start -->
+            <div class='widget recent-properties'>
+              <h3 class='sidebar-title'>Recent Properties</h3>
+              <div class='s-border'></div>
+              <div class='media mb-4'>
+                <a class='pr-3' href='properties-details.html'>
+                  <img
+                    class='media-object'
+                    src='../../assets/small-properties-1.jpg'
+                    alt='small-properties'
+                  />
+                </a>
+                <div class='media-body align-self-center'>
+                  <h5>
+                    <a href='properties-details.html'>Modern Family Home</a>
+                  </h5>
+                  <div class='listing-post-meta'>
+                    $345,000 |
+                    <a href='#'>
+                      <i class='fa fa-calendar'></i> Oct 27, 2018
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class='media mb-4'>
+                <a class='pr-3' href='properties-details.html'>
+                  <img
+                    class='media-object'
+                    src='../../assets/small-properties-2.jpg'
+                    alt='small-properties'
+                  />
+                </a>
+                <div class='media-body align-self-center'>
+                  <h5>
+                    <a href='properties-details.html'>Beautiful Single Home</a>
+                  </h5>
+                  <div class='listing-post-meta'>
+                    $415,000 |
+                    <a href='#'>
+                      <i class='fa fa-calendar'></i> Feb 14, 2018
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class='media'>
+                <a class='pr-3' href='properties-details.html'>
+                  <img
+                    class='media-object'
+                    src='../../assets/small-properties-3.jpg'
+                    alt='small-properties'
+                  />
+                </a>
+                <div class='media-body align-self-center'>
+                  <h5>
+                    <a href='properties-details.html'>Real Luxury Villa</a>
+                  </h5>
+                  <div class='listing-post-meta'>
+                    $345,000 |
+                    <a href='#'>
+                      <i class='fa fa-calendar'></i> Oct 12, 2018
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Posts by category Start -->
+            <div class='posts-by-category widget'>
+              <h3 class='sidebar-title'>Category</h3>
+              <div class='s-border'></div>
+              <ul class='list-unstyled list-cat'>
+                <li>
+                  <a href='#'>
+                    Single Family
+                    <span>(45)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    Apartment
+                    <span>(21)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    Condo
+                    <span>(23)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    Multi Family
+                    <span>(19)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    Villa
+                    <span>(19)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    Other
+                    <span>(22)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Our agent sidebar start -->
+            <div class='our-agent-sidebar'>
+              <div class='p-20'>
+                <h3 class='sidebar-title'>Our Agent</h3>
+                <div class='s-border'></div>
+              </div>
+              <el-carousel height="530px">
+                <el-carousel-item v-for="(item, index) in personLoop" :key="index">
+                  <div class='carousel-item active'>
+                    <div class='team-1'>
+                      <div class='team-photo'>
+                        <a href='#'>
+                          <img :src='item.imgUrl' alt='agent-2' class='img-fluid' />
+                        </a>
+                        <ul class='social-list clearfix'>
+                          <li>
+                            <a href='#' class='facebook'>
+                              <i class='fa fa-facebook'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#' class='twitter'>
+                              <i class='fa fa-twitter'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#' class='instagram'>
+                              <i class='fa fa-instagram'></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#' class='linkedin'>
+                              <i class='fa fa-linkedin'></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class='team-details'>
+                        <h5>
+                          <a href='agent-detail.html'>Martin Smith</a>
+                        </h5>
+                        <h6>Web Developer</h6>
+                        <h4>+1 204 777 0187</h4>
+                      </div>
+                    </div>
+                  </div>
+                </el-carousel-item>
+              </el-carousel>
+            </div>
+          </div>
+        </el-col>
         <el-col :span='16'>
           <!-- Option bar start -->
           <div class='option-bar d-none d-xl-block d-lg-block d-md-block d-sm-block'>
@@ -496,282 +772,6 @@
                 </li>
               </ul>
             </nav>
-          </div>
-        </el-col>
-        <el-col :span='8'>
-          <div class='sidebar-right'>
-            <!-- Advanced search start -->
-            <div class='widget advanced-search'>
-              <h3 class='sidebar-title'>Advanced Search</h3>
-              <div class='s-border'></div>
-              <el-select class='se-mt' v-model='form.item1'>
-                <el-option value='All Status'>All Status</el-option>
-                <el-option value='For Sale'>For Sale</el-option>
-                <el-option value='For Rent'>For Rent</el-option>
-              </el-select>
-              <el-select class='se-mt' v-model='form.item2'>
-                <el-option
-                  v-for='(item, index) in options'
-                  :key='`${index}_item2`'
-                  :label='item.label'
-                  :value='item.value'
-                ></el-option>
-              </el-select>
-              <el-select class='se-mt' v-model='form.item3'>
-                <el-option
-                  v-for='(item, index) in options'
-                  :key='`${index}_item3`'
-                  :label='item.label'
-                  :value='item.value'
-                ></el-option>
-              </el-select>
-              <el-select class='se-mt' v-model='form.item4'>
-                <el-option
-                  v-for='(item, index) in options'
-                  :key='`${index}_item4`'
-                  :label='item.label'
-                  :value='item.value'
-                ></el-option>
-              </el-select>
-              <el-row :gutter="30">
-                <el-col :span='12'>
-                   <el-select class='se-mt' v-model='form.item5'>
-                    <el-option
-                      v-for='(item, index) in options'
-                      :key='`${index}_item5`'
-                      :label='item.label'
-                      :value='item.value'
-                    ></el-option>
-                  </el-select>
-                </el-col>
-                <el-col :span='12'>
-                  <el-select class='se-mt' v-model='form.item6'>
-                    <el-option
-                      v-for='(item, index) in options'
-                      :key='`${index}_item6`'
-                      :label='item.label'
-                      :value='item.value'
-                    ></el-option>
-                  </el-select>
-                </el-col>
-              </el-row>
-              <el-row :gutter="30">
-                <el-col :span='12'>
-                  <el-select class='se-mt' v-model='form.item7'>
-                    <el-option
-                      v-for='(item, index) in options'
-                      :key='`${index}_item7`'
-                      :label='item.label'
-                      :value='item.value'
-                    ></el-option>
-                  </el-select>
-                </el-col>
-                <el-col :span='12'>
-                  <el-select class='se-mt' v-model='form.item8'>
-                    <el-option
-                      v-for='(item, index) in options'
-                      :key='`${index}_item8`'
-                      :label='item.label'
-                      :value='item.value'
-                    ></el-option>
-                  </el-select>
-                </el-col>
-              </el-row>
-              <div class="range-slider">
-                  <label>Area</label>
-                  <el-slider
-                    v-model="slider1Value"
-                    range
-                   :marks="marks1">
-                  </el-slider>
-              </div>
-              <div class="range-slider">
-                  <label>Price</label>
-                  <el-slider
-                    v-model="slider2Value"
-                    range
-                   :marks="marks2">
-                  </el-slider>
-              </div>
-              <a class="show-more-options" @click="isFeaturesShow = !isFeaturesShow">
-                  <i class="fa fa-plus-circle"></i> Other Features
-              </a>
-              <div v-if="isFeaturesShow" class="collapse">
-                  <h3 class="sidebar-title">Features</h3>
-                  <div class="s-border"></div>
-                  <el-checkbox-group v-model="checkList">
-                    <el-checkbox label="Air Condition"></el-checkbox>
-                    <el-checkbox label="Places to seat"></el-checkbox>
-                    <el-checkbox label="Swimming Pool"></el-checkbox>
-                    <el-checkbox label="Free Parking"></el-checkbox>
-                    <el-checkbox label="Central Heating"></el-checkbox>
-                    <el-checkbox label="Laundry Room"></el-checkbox>
-                    <el-checkbox label="Window Covering"></el-checkbox>
-                    <el-checkbox label="Alarm"></el-checkbox>
-                  </el-checkbox-group>
-                  <br>
-              </div>
-               <div class="form-group mb-0">
-                  <button class="search-button">Search</button>
-              </div>
-            </div>
-            <!-- Recent properties start -->
-            <div class='widget recent-properties'>
-              <h3 class='sidebar-title'>Recent Properties</h3>
-              <div class='s-border'></div>
-              <div class='media mb-4'>
-                <a class='pr-3' href='properties-details.html'>
-                  <img
-                    class='media-object'
-                    src='../../assets/small-properties-1.jpg'
-                    alt='small-properties'
-                  />
-                </a>
-                <div class='media-body align-self-center'>
-                  <h5>
-                    <a href='properties-details.html'>Modern Family Home</a>
-                  </h5>
-                  <div class='listing-post-meta'>
-                    $345,000 |
-                    <a href='#'>
-                      <i class='fa fa-calendar'></i> Oct 27, 2018
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class='media mb-4'>
-                <a class='pr-3' href='properties-details.html'>
-                  <img
-                    class='media-object'
-                    src='../../assets/small-properties-2.jpg'
-                    alt='small-properties'
-                  />
-                </a>
-                <div class='media-body align-self-center'>
-                  <h5>
-                    <a href='properties-details.html'>Beautiful Single Home</a>
-                  </h5>
-                  <div class='listing-post-meta'>
-                    $415,000 |
-                    <a href='#'>
-                      <i class='fa fa-calendar'></i> Feb 14, 2018
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class='media'>
-                <a class='pr-3' href='properties-details.html'>
-                  <img
-                    class='media-object'
-                    src='../../assets/small-properties-3.jpg'
-                    alt='small-properties'
-                  />
-                </a>
-                <div class='media-body align-self-center'>
-                  <h5>
-                    <a href='properties-details.html'>Real Luxury Villa</a>
-                  </h5>
-                  <div class='listing-post-meta'>
-                    $345,000 |
-                    <a href='#'>
-                      <i class='fa fa-calendar'></i> Oct 12, 2018
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Posts by category Start -->
-            <div class='posts-by-category widget'>
-              <h3 class='sidebar-title'>Category</h3>
-              <div class='s-border'></div>
-              <ul class='list-unstyled list-cat'>
-                <li>
-                  <a href='#'>
-                    Single Family
-                    <span>(45)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href='#'>
-                    Apartment
-                    <span>(21)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href='#'>
-                    Condo
-                    <span>(23)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href='#'>
-                    Multi Family
-                    <span>(19)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href='#'>
-                    Villa
-                    <span>(19)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href='#'>
-                    Other
-                    <span>(22)</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- Our agent sidebar start -->
-            <div class='our-agent-sidebar'>
-              <div class='p-20'>
-                <h3 class='sidebar-title'>Our Agent</h3>
-                <div class='s-border'></div>
-              </div>
-              <el-carousel height="530px">
-                <el-carousel-item v-for="(item, index) in personLoop" :key="index">
-                  <div class='carousel-item active'>
-                    <div class='team-1'>
-                      <div class='team-photo'>
-                        <a href='#'>
-                          <img :src='item.imgUrl' alt='agent-2' class='img-fluid' />
-                        </a>
-                        <ul class='social-list clearfix'>
-                          <li>
-                            <a href='#' class='facebook'>
-                              <i class='fa fa-facebook'></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href='#' class='twitter'>
-                              <i class='fa fa-twitter'></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href='#' class='instagram'>
-                              <i class='fa fa-instagram'></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href='#' class='linkedin'>
-                              <i class='fa fa-linkedin'></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class='team-details'>
-                        <h5>
-                          <a href='agent-detail.html'>Martin Smith</a>
-                        </h5>
-                        <h6>Web Developer</h6>
-                        <h4>+1 204 777 0187</h4>
-                      </div>
-                    </div>
-                  </div>
-                </el-carousel-item>
-              </el-carousel>
-            </div>
           </div>
         </el-col>
       </el-row>
