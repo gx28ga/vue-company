@@ -1,6 +1,9 @@
 const webpack = require('webpack')
 
 module.exports = {
+  output: {
+    publicPath: './'
+  },
   chainWebpack: (config) => {
     config.externals({
       vue: 'Vue'
