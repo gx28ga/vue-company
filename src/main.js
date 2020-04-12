@@ -10,7 +10,6 @@ import '@/styles/index.scss'
 import 'swiper/css/swiper.css'
 /* eslint-disable*/
 import $ from 'jquery'
-import 'owl.carousel'
 Vue.use(VueAwesomeSwiper)
 
 Vue.use(ElementUI)
