@@ -641,10 +641,6 @@
   /*------------------------------------------
         BACK TO TOP BTN SETTING
     -------------------------------------------*/
-  $('body').append(
-    "<a href='#' class='back-to-top'><i class='ti-arrow-up'></i></a>"
-  )
-
   function toggleBackToTopBtn() {
     var amountScrolled = 1000
     if ($(window).scrollTop() > amountScrolled) {
