@@ -26,7 +26,9 @@
               <li><a>文字</a></li>
             </ul>
           </li>
-          <li><a href="#">关于我们</a></li>
+          <li><router-link tag="a" to="/about">关于我们</router-link></li>
+          <li><router-link tag="a" to="/list">列表</router-link></li>
+          <li><router-link tag="a" to="/detail">详情</router-link></li>
         </ul>
       </div>
 
