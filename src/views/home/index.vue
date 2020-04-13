@@ -1,6 +1,53 @@
 <template>
   <div>
     <home-swiper />
+     <!-- start of Features Wrapper -->
+  <section class="features-wrapper">
+    <div class="container">
+      <el-row :gutter="30" class="box-shadow2 bg-white featured-box">
+       <el-col :span="8">
+         <div class="featured-icon-box text-center">
+            <div class="featured-icon"> <i class="fa fa-cog"></i> </div>
+            <div class="featured-content">
+              <div class="featured-title">
+                <h5>Who we are</h5>
+              </div>
+              <div class="featured-desc">
+                <p>Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor</p>
+                <a class="btn" href="#">More Services<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+          </div>
+       </el-col>
+       <el-col :span="8" class="box-shadow2">
+         <div class="featured-icon-box text-center">
+            <div class="featured-icon"> <i class="fa fa-user-o"></i> </div>
+            <div class="featured-content">
+              <div class="featured-title">
+                <h5>What we do</h5>
+              </div>
+              <div class="featured-desc">
+                <p>Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor</p>
+                <a class="btn" href="#">More Services<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+          </div>
+       </el-col>
+       <el-col :span="8">
+         <div class="featured-icon-box text-center">
+            <div class="featured-icon"> <i class="fa fa-thumbs-o-up"></i> </div>
+            <div class="featured-content">
+              <div class="featured-title">
+                <h5>Why Choose Us?</h5>
+              </div>
+              <div class="featured-desc">
+                <p>Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor</p>
+                <a class="btn" href="#">More Services<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+          </div>
+       </el-col>
+      </el-row>
+    </div>
+  </section>
+  <!-- End of Features Wrapper -->
     <div class='hot-target section-padding'>
       <div class='container'>
          <el-row :gutter='30'>
