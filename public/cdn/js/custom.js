@@ -1,137 +1,139 @@
-setTimeout(() => {
-  if ($('.portfolio-slider').length) {
-    $('.portfolio-slider').owlCarousel({
-      items: 3,
-      loop: true,
-      margin: 30,
-      nav: true,
-      navText: [
-        '<i class="fi flaticon-back"></i>',
-        '<i class="fi flaticon-next"></i>'
-      ],
-      smartSpeed: 500,
-      responsive: {
-        0: {
-          items: 1
-        },
+$(
+  setTimeout(() => {
+    if ($('.portfolio-slider').length) {
+      $('.portfolio-slider').owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: [
+          '<i class="fi flaticon-back"></i>',
+          '<i class="fi flaticon-next"></i>'
+        ],
+        smartSpeed: 500,
+        responsive: {
+          0: {
+            items: 1
+          },
 
-        650: {
-          items: 2,
-          center: false,
-          margin: 10
-        },
+          650: {
+            items: 2,
+            center: false,
+            margin: 10
+          },
 
-        992: {
-          items: 3
+          992: {
+            items: 3
+          }
         }
-      }
-    })
-  }
+      })
+    }
 
-  /*------------------------------------------
-        = TEAM SLIDER
-    -------------------------------------------*/
-  if ($('.team-slider').length) {
-    $('.team-slider').owlCarousel({
-      loop: true,
-      // margin: 30,
-      dots: false,
-      nav: true,
-      navText: [
-        '<i class="fi flaticon-back"></i>',
-        '<i class="fi flaticon-next"></i>'
-      ],
-      smartSpeed: 500,
-      responsive: {
-        0: {
-          items: 1
-        },
+    /*------------------------------------------
+          = TEAM SLIDER
+      -------------------------------------------*/
+    if ($('.team-slider').length) {
+      $('.team-slider').owlCarousel({
+        loop: true,
+        // margin: 30,
+        dots: false,
+        nav: true,
+        navText: [
+          '<i class="fi flaticon-back"></i>',
+          '<i class="fi flaticon-next"></i>'
+        ],
+        smartSpeed: 500,
+        responsive: {
+          0: {
+            items: 1
+          },
 
-        550: {
-          items: 2,
-          center: false,
-          margin: 10
-        },
+          550: {
+            items: 2,
+            center: false,
+            margin: 10
+          },
 
-        892: {
-          items: 3
-        },
+          892: {
+            items: 3
+          },
 
-        1200: {
-          items: 4
-        },
+          1200: {
+            items: 4
+          },
 
-        1400: {
-          items: 6
+          1400: {
+            items: 6
+          }
         }
-      }
-    })
-  }
+      })
+    }
 
-  /*------------------------------------------
-        Testimonials Carousel
-    -------------------------------------------*/
-  if ($('.testimonials-carousel').length) {
-    $('.testimonials-carousel').owlCarousel({
-      loop: true,
-      animateOut: 'slideOutDown',
-      animateIn: 'fadeUp',
-      margin: 20,
-      nav: true,
-      smartSpeed: 300,
-      autoplay: true,
-      navText: [
-        '<span class="flaticon-back"></span>',
-        '<span class="flaticon-next"></span>'
-      ],
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        750: {
-          items: 2
-        },
-        1024: {
-          items: 3
+    /*------------------------------------------
+          Testimonials Carousel
+      -------------------------------------------*/
+    if ($('.testimonials-carousel').length) {
+      $('.testimonials-carousel').owlCarousel({
+        loop: true,
+        animateOut: 'slideOutDown',
+        animateIn: 'fadeUp',
+        margin: 20,
+        nav: true,
+        smartSpeed: 300,
+        autoplay: true,
+        navText: [
+          '<span class="flaticon-back"></span>',
+          '<span class="flaticon-next"></span>'
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          750: {
+            items: 2
+          },
+          1024: {
+            items: 3
+          }
         }
-      }
-    })
-  }
+      })
+    }
 
-  /*------------------------------------------
-        = Partners Slider
-    -------------------------------------------*/
-  if ($('.partners-slider').length) {
-    $('.partners-slider').owlCarousel({
-      autoplay: true,
-      smartSpeed: 300,
-      margin: 30,
-      loop: true,
-      autoplayHoverPause: true,
-      dots: false,
-      responsive: {
-        0: {
-          items: 2
-        },
+    /*------------------------------------------
+          = Partners Slider
+      -------------------------------------------*/
+    if ($('.partners-slider').length) {
+      $('.partners-slider').owlCarousel({
+        autoplay: true,
+        smartSpeed: 300,
+        margin: 30,
+        loop: true,
+        autoplayHoverPause: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 2
+          },
 
-        550: {
-          items: 3
-        },
+          550: {
+            items: 3
+          },
 
-        992: {
-          items: 4
-        },
+          992: {
+            items: 4
+          },
 
-        1200: {
-          items: 5
+          1200: {
+            items: 5
+          }
         }
-      }
-    })
-  }
-}, 1000)
+      })
+    }
+  }, 1000)
+)
 ;(function ($) {
   'use strict'
 

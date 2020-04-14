@@ -20,8 +20,8 @@
           </div>
           <div class="clearfix"></div>
           <div data-swiper-parallax="500" class="slide-btns">
-            <a href="#" class="theme-btn">Explore More</a>
-            <a href="#" class="theme-btn one">Get Started</a>
+            <a href="#" class="theme-btn">加入我们</a>
+            <a href="#" class="theme-btn one">成为密探</a>
           </div>
         </div>
       </div>
@@ -49,8 +49,8 @@
           </div>
           <div class="clearfix"></div>
           <div data-swiper-parallax="500" class="slide-btns">
-            <a href="#" class="theme-btn">Explore More</a>
-            <a href="#" class="theme-btn one">Get Started</a>
+            <a href="#" class="theme-btn">加入我们</a>
+            <a href="#" class="theme-btn one">成为密探</a>
           </div>
         </div>
       </div>
@@ -78,8 +78,8 @@
           </div>
           <div class="clearfix"></div>
           <div data-swiper-parallax="500" class="slide-btns">
-            <a href="#" class="theme-btn">Explore More</a>
-            <a href="#" class="theme-btn one">Get Started</a>
+            <a href="#" class="theme-btn">加入我们</a>
+            <a href="#" class="theme-btn one">成为密探</a>
           </div>
         </div>
       </div>
