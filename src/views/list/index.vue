@@ -147,7 +147,7 @@
             </div>
             <!-- Posts by category Start -->
             <div class="posts-by-category widget">
-              <h3 class="sidebar-title">Category</h3>
+              <h3 class="sidebar-title">类别</h3>
               <div class="s-border"></div>
               <ul class="list-unstyled list-cat">
                 <li>
