@@ -37,50 +37,14 @@
                   :value="item.value"
                 ></el-option>
               </el-select>
-              <el-row :gutter="30">
-                <el-col :span="12">
-                  <el-select class="se-mt" v-model="form.item5">
-                    <el-option
-                      v-for="(item, index) in options"
-                      :key="`${index}_item5`"
-                      :label="item.label"
-                      :value="item.value"
-                    ></el-option>
-                  </el-select>
-                </el-col>
-                <el-col :span="12">
-                  <el-select class="se-mt" v-model="form.item6">
-                    <el-option
-                      v-for="(item, index) in options"
-                      :key="`${index}_item6`"
-                      :label="item.label"
-                      :value="item.value"
-                    ></el-option>
-                  </el-select>
-                </el-col>
-              </el-row>
-              <el-row :gutter="30">
-                <el-col :span="12">
-                  <el-select class="se-mt" v-model="form.item7">
-                    <el-option
-                      v-for="(item, index) in options"
-                      :key="`${index}_item7`"
-                      :label="item.label"
-                      :value="item.value"
-                    ></el-option>
-                  </el-select>
-                </el-col>
-                <el-col :span="12">
-                  <el-select class="se-mt" v-model="form.item8">
-                    <el-option
-                      v-for="(item, index) in options"
-                      :key="`${index}_item8`"
-                      :label="item.label"
-                      :value="item.value"
-                    ></el-option>
-                  </el-select>
-                </el-col>
-              </el-row>
+               <el-select class="se-mt" v-model="form.item7">
+                  <el-option
+                    v-for="(item, index) in options_choose"
+                    :key="`${index}_item7`"
+                    :label="item.label"
+                    :value="item.value"
+                  ></el-option>
+                </el-select>
               <div class="range-slider">
                 <label>Area</label>
                 <el-slider v-model="slider1Value" range :marks="marks1">
@@ -188,38 +152,32 @@
               <ul class="list-unstyled list-cat">
                 <li>
                   <a href="#">
-                    Single Family
+                    房地产
                     <span>(45)</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    Apartment
+                    汽车
                     <span>(21)</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    Condo
+                    债权
                     <span>(23)</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    Multi Family
+                    股权
                     <span>(19)</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    Villa
+                    其他
                     <span>(19)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Other
-                    <span>(22)</span>
                   </a>
                 </li>
               </ul>
@@ -481,6 +439,24 @@ export default {
         },
         {
           imgUrl: require('../../assets/avatar-7.jpg')
+        }
+      ],
+      options_choose: [
+        {
+          label: '可贷款',
+          value: 'daikuan'
+        },
+        {
+          label: '破产类',
+          value: 'pochan'
+        },
+        {
+          label: '可代拍',
+          value: 'daipai'
+        },
+        {
+          label: '变卖',
+          value: 'All Type'
         }
       ]
     }
