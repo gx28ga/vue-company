@@ -1,18 +1,17 @@
 import Vue from 'vue'
-import App from './App.vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import router from './router'
 import store from './store'
-import ElementUI from 'element-ui'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'normalize.css/normalize.css'
-import 'element-ui/lib/theme-chalk/index.css'
-import '@/styles/index.scss'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'swiper/css/swiper.css'
-/* eslint-disable*/
-import $ from 'jquery'
+import 'tiny-slider/src/tiny-slider.scss'
+import '@/styles/index.scss'
+import App from './App.vue'
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 Vue.use(VueAwesomeSwiper)
-
-Vue.use(ElementUI)
 Vue.config.productionTip = false
 new Vue({
   router,

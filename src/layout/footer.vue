@@ -1,83 +1,83 @@
 <template>
   <footer class="site-footer">
-    <div class="upper-footer">
-      <div class="container">
-        <el-row :gutter="30">
-          <el-col :span="6">
-            <div class="widget about-widget">
-              <div class="logo widget-title">
-                <h3>About Us</h3>
-              </div>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry lorem Ipsum has been the industry's standard dummy text
-              </p>
-            </div>
-          </el-col>
-          <el-col :span="6">
-            <div class="widget link-widget">
-              <div class="widget-title">
-                <h3>Quick Links</h3>
-              </div>
-              <ul>
-                <li><a href="javascript:void(0)">About Us</a></li>
-                <li><a href="javascript:void(0)">Our Services</a></li>
-                <li><a href="javascript:void(0)">Blog</a></li>
-                <li><a href="javascript:void(0)">Contact Us</a></li>
-              </ul>
-              <ul>
-                <li><a href="javascript:void(0)">Testimonials</a></li>
-                <li><a href="javascript:void(0)">Blog</a></li>
-                <li><a href="javascript:void(0)">FAQ</a></li>
-              </ul>
-            </div>
-          </el-col>
-          <el-col :span="6">
-            <div class="widget contact-widget service-link-widget">
-              <div class="widget-title">
-                <h3>Head office</h3>
-              </div>
-              <p>
-                125 Big fella St., New York, Hi 5654775, United States of
-                America
-              </p>
-              <ul>
-                <li>Phone: 0123456789</li>
-                <li>
-                  Email:
-                  <a href="mailto:test@sbtechnosoft.com"
-                    >test@sbtechnosoft.com</a
-                  >
-                </li>
-                <li>Office Time: 9 a.m.- 6 p.m.</li>
-              </ul>
-            </div>
-          </el-col>
-          <el-col :span="6">
-            <div class="widget newsletter-widget">
-              <div class="widget-title">
-                <h3>Newsletter</h3>
-              </div>
-              <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-            </div>
-          </el-col>
-        </el-row>
-      </div>
-      <!-- end container -->
-    </div>
-    <div class="lower-footer">
-      <div class="container">
-        <el-row :gutter="30">
-          <div class="separator"></div>
-          <el-col :span="24">
-            <p class="copyright">
-              Copyright &copy; 2019 <span>sbtechnosoft</span>. All rights
-              reserved.
-            </p>
-          </el-col>
-        </el-row>
-      </div>
-    </div>
+    <!--    <div class="upper-footer">-->
+    <!--      <div class="container">-->
+    <!--        <el-row :gutter="30">-->
+    <!--          <el-col :span="6">-->
+    <!--            <div class="widget about-widget">-->
+    <!--              <div class="logo widget-title">-->
+    <!--                <h3>About Us</h3>-->
+    <!--              </div>-->
+    <!--              <p>-->
+    <!--                Lorem Ipsum is simply dummy text of the printing and typesetting-->
+    <!--                industry lorem Ipsum has been the industry's standard dummy text-->
+    <!--              </p>-->
+    <!--            </div>-->
+    <!--          </el-col>-->
+    <!--          <el-col :span="6">-->
+    <!--            <div class="widget link-widget">-->
+    <!--              <div class="widget-title">-->
+    <!--                <h3>Quick Links</h3>-->
+    <!--              </div>-->
+    <!--              <ul>-->
+    <!--                <li><a href="javascript:void(0)">About Us</a></li>-->
+    <!--                <li><a href="javascript:void(0)">Our Services</a></li>-->
+    <!--                <li><a href="javascript:void(0)">Blog</a></li>-->
+    <!--                <li><a href="javascript:void(0)">Contact Us</a></li>-->
+    <!--              </ul>-->
+    <!--              <ul>-->
+    <!--                <li><a href="javascript:void(0)">Testimonials</a></li>-->
+    <!--                <li><a href="javascript:void(0)">Blog</a></li>-->
+    <!--                <li><a href="javascript:void(0)">FAQ</a></li>-->
+    <!--              </ul>-->
+    <!--            </div>-->
+    <!--          </el-col>-->
+    <!--          <el-col :span="6">-->
+    <!--            <div class="widget contact-widget service-link-widget">-->
+    <!--              <div class="widget-title">-->
+    <!--                <h3>Head office</h3>-->
+    <!--              </div>-->
+    <!--              <p>-->
+    <!--                125 Big fella St., New York, Hi 5654775, United States of-->
+    <!--                America-->
+    <!--              </p>-->
+    <!--              <ul>-->
+    <!--                <li>Phone: 0123456789</li>-->
+    <!--                <li>-->
+    <!--                  Email:-->
+    <!--                  <a href="mailto:test@sbtechnosoft.com"-->
+    <!--                    >test@sbtechnosoft.com</a-->
+    <!--                  >-->
+    <!--                </li>-->
+    <!--                <li>Office Time: 9 a.m.- 6 p.m.</li>-->
+    <!--              </ul>-->
+    <!--            </div>-->
+    <!--          </el-col>-->
+    <!--          <el-col :span="6">-->
+    <!--            <div class="widget newsletter-widget">-->
+    <!--              <div class="widget-title">-->
+    <!--                <h3>Newsletter</h3>-->
+    <!--              </div>-->
+    <!--              <p>Lorem Ipsum is simply dummy text of the printing industry.</p>-->
+    <!--            </div>-->
+    <!--          </el-col>-->
+    <!--        </el-row>-->
+    <!--      </div>-->
+    <!--      &lt;!&ndash; end container &ndash;&gt;-->
+    <!--    </div>-->
+    <!--    <div class="lower-footer">-->
+    <!--      <div class="container">-->
+    <!--        <el-row :gutter="30">-->
+    <!--          <div class="separator"></div>-->
+    <!--          <el-col :span="24">-->
+    <!--            <p class="copyright">-->
+    <!--              Copyright &copy; 2019 <span>sbtechnosoft</span>. All rights-->
+    <!--              reserved.-->
+    <!--            </p>-->
+    <!--          </el-col>-->
+    <!--        </el-row>-->
+    <!--      </div>-->
+    <!--    </div>-->
   </footer>
 </template>
 

@@ -1,981 +1,466 @@
 <template>
   <div>
     <home-swiper />
-     <!-- start of Features Wrapper -->
-  <section class="features-wrapper">
-    <div class="container">
-      <el-row :gutter="30" class="box-shadow2 bg-white featured-box">
-       <el-col :span="8">
-         <div class="featured-icon-box text-center">
-            <div class="featured-icon"> <i class="fa fa-cog"></i> </div>
-            <div class="featured-content">
-              <div class="featured-title">
-                <h5>Who we are</h5>
-              </div>
-              <div class="featured-desc">
-                <p>Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor</p>
-                <a class="btn" href="#">More Services<i class="fa fa-arrow-right"></i></a> </div>
-            </div>
-          </div>
-       </el-col>
-       <el-col :span="8" class="box-shadow2">
-         <div class="featured-icon-box text-center">
-            <div class="featured-icon"> <i class="fa fa-user-o"></i> </div>
-            <div class="featured-content">
-              <div class="featured-title">
-                <h5>What we do</h5>
-              </div>
-              <div class="featured-desc">
-                <p>Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor</p>
-                <a class="btn" href="#">More Services<i class="fa fa-arrow-right"></i></a> </div>
-            </div>
-          </div>
-       </el-col>
-       <el-col :span="8">
-         <div class="featured-icon-box text-center">
-            <div class="featured-icon"> <i class="fa fa-thumbs-o-up"></i> </div>
-            <div class="featured-content">
-              <div class="featured-title">
-                <h5>Why Choose Us?</h5>
-              </div>
-              <div class="featured-desc">
-                <p>Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor</p>
-                <a class="btn" href="#">More Services<i class="fa fa-arrow-right"></i></a> </div>
-            </div>
-          </div>
-       </el-col>
-      </el-row>
-    </div>
-  </section>
-  <!-- End of Features Wrapper -->
-    <div class='hot-target section-padding'>
-      <div class='container'>
-         <el-row :gutter='30'>
-          <el-col :lg='12' :offset='6'>
-            <div class='section-title-s2'>
-              <h2>热门标的</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-            </div>
-          </el-col>
-        </el-row>
-        <el-row :gutter="30" class="hot-list">
-          <el-col :span="6" class="hot-list-item">
-            <div class="item-thumb">
-              <img src="../../assets/popular1.jpg" alt="">
-            </div>
-            <div class="item-detail">
-              <div class="instructor">$397</div>
-              <div class="item-title">Machine Learning A-Z: Hands-On Python Data Science</div>
-              <div class="detail-bottom">
-                <div class="detail-user"><i class="fa fa-user"></i><span class="user-text">person</span></div>
-                <div class="stars-cnt">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="item-money">$20</div>
-          </el-col>
-          <el-col :span="6" class="hot-list-item">
-             <div class="item-thumb">
-              <img src="../../assets/popular2.jpg" alt="">
-            </div>
-            <div class="item-detail">
-              <div class="instructor">$389</div>
-              <div class="item-title">Machine Learning A-Z: Hands-On Python Data Science</div>
-              <div class="detail-bottom">
-                <div class="detail-user"><i class="fa fa-user"></i><span class="user-text">person</span></div>
-                <div class="stars-cnt">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="item-money">$10</div>
-          </el-col>
-          <el-col :span="6" class="hot-list-item">
-             <div class="item-thumb">
-              <img src="../../assets/popular3.jpg" alt="">
-            </div>
-            <div class="item-detail">
-              <div class="instructor">$389</div>
-              <div class="item-title">Machine Learning A-Z: Hands-On Python Data Science</div>
-              <div class="detail-bottom">
-                <div class="detail-user"><i class="fa fa-user"></i><span class="user-text">person</span></div>
-                <div class="stars-cnt">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="item-money">$10</div>
-          </el-col>
-          <el-col :span="6" class="hot-list-item">
-             <div class="item-thumb">
-              <img src="../../assets/popular4.jpg" alt="">
-            </div>
-            <div class="item-detail">
-              <div class="instructor">$389</div>
-              <div class="item-title">Machine Learning A-Z: Hands-On Python Data Science</div>
-              <div class="detail-bottom">
-                <div class="detail-user"><i class="fa fa-user"></i><span class="user-text">person</span></div>
-                <div class="stars-cnt">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="item-money">$10</div>
-          </el-col>
-        </el-row>
-        <el-row :gutter="30">
-          <el-col :span="6" class="hot-list-item">
-             <div class="item-thumb">
-              <img src="../../assets/popular5.jpg" alt="">
-            </div>
-            <div class="item-detail">
-              <div class="instructor">$389</div>
-              <div class="item-title">Machine Learning A-Z: Hands-On Python Data Science</div>
-              <div class="detail-bottom">
-                <div class="detail-user"><i class="fa fa-user"></i><span class="user-text">person</span></div>
-                <div class="stars-cnt">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="item-money">$10</div>
-          </el-col>
-          <el-col :span="6" class="hot-list-item">
-             <div class="item-thumb">
-              <img src="../../assets/popular6.jpg" alt="">
-            </div>
-            <div class="item-detail">
-              <div class="instructor">$389</div>
-              <div class="item-title">Machine Learning A-Z: Hands-On Python Data Science</div>
-              <div class="detail-bottom">
-                <div class="detail-user"><i class="fa fa-user"></i><span class="user-text">person</span></div>
-                <div class="stars-cnt">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="item-money">$10</div>
-          </el-col>
-          <el-col :span="6" class="hot-list-item">
-             <div class="item-thumb">
-              <img src="../../assets/popular7.jpg" alt="">
-            </div>
-            <div class="item-detail">
-              <div class="instructor">$389</div>
-              <div class="item-title">Machine Learning A-Z: Hands-On Python Data Science</div>
-              <div class="detail-bottom">
-                <div class="detail-user"><i class="fa fa-user"></i><span class="user-text">person</span></div>
-                <div class="stars-cnt">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="item-money">$10</div>
-          </el-col>
-          <el-col :span="6" class="hot-list-item">
-            <div class="item-thumb">
-              <img src="../../assets/popular8.jpg" alt="">
-            </div>
-            <div class="item-detail">
-              <div class="instructor">$389</div>
-              <div class="item-title">Machine Learning A-Z: Hands-On Python Data Science</div>
-              <div class="detail-bottom">
-                <div class="detail-user"><i class="fa fa-user"></i><span class="user-text">person</span></div>
-                <div class="stars-cnt">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="item-money">$10</div>
-          </el-col>
-        </el-row>
-      </div>
-    </div>
-    <div class="today-rank section-padding">
+    <home-features />
+    <!--    <div class="hot-target section-padding">-->
+    <!--      <div class="container">-->
+    <!--        <b-row>-->
+    <!--          <b-col :lg="12" :offset="6">-->
+    <!--            <div class="section-title-s2">-->
+    <!--              <h2>热门标的</h2>-->
+    <!--              <p>-->
+    <!--                Lorem Ipsum is simply dummy text of the printing and typesetting-->
+    <!--              </p>-->
+    <!--            </div>-->
+    <!--          </b-col>-->
+    <!--        </b-row>-->
+    <!--        <b-row :gutter="30" class="hot-list">-->
+    <!--          <b-col :span="6" class="hot-list-item">-->
+    <!--            <div class="item-thumb">-->
+    <!--              <img src="../../assets/popular1.jpg" alt="" />-->
+    <!--            </div>-->
+    <!--            <div class="item-detail">-->
+    <!--              <div class="instructor">$397</div>-->
+    <!--              <div class="item-title">-->
+    <!--                Machine Learning A-Z: Hands-On Python Data Science-->
+    <!--              </div>-->
+    <!--              <div class="detail-bottom">-->
+    <!--                <div class="detail-user">-->
+    <!--                  <i class="fa fa-user"></i-->
+    <!--                  ><span class="user-text">person</span>-->
+    <!--                </div>-->
+    <!--                <div class="stars-cnt">-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--            <div class="item-money">$20</div>-->
+    <!--          </b-col>-->
+    <!--          <b-col :span="6" class="hot-list-item">-->
+    <!--            <div class="item-thumb">-->
+    <!--              <img src="../../assets/popular2.jpg" alt="" />-->
+    <!--            </div>-->
+    <!--            <div class="item-detail">-->
+    <!--              <div class="instructor">$389</div>-->
+    <!--              <div class="item-title">-->
+    <!--                Machine Learning A-Z: Hands-On Python Data Science-->
+    <!--              </div>-->
+    <!--              <div class="detail-bottom">-->
+    <!--                <div class="detail-user">-->
+    <!--                  <i class="fa fa-user"></i-->
+    <!--                  ><span class="user-text">person</span>-->
+    <!--                </div>-->
+    <!--                <div class="stars-cnt">-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--            <div class="item-money">$10</div>-->
+    <!--          </b-col>-->
+    <!--          <b-col :span="6" class="hot-list-item">-->
+    <!--            <div class="item-thumb">-->
+    <!--              <img src="../../assets/popular3.jpg" alt="" />-->
+    <!--            </div>-->
+    <!--            <div class="item-detail">-->
+    <!--              <div class="instructor">$389</div>-->
+    <!--              <div class="item-title">-->
+    <!--                Machine Learning A-Z: Hands-On Python Data Science-->
+    <!--              </div>-->
+    <!--              <div class="detail-bottom">-->
+    <!--                <div class="detail-user">-->
+    <!--                  <i class="fa fa-user"></i-->
+    <!--                  ><span class="user-text">person</span>-->
+    <!--                </div>-->
+    <!--                <div class="stars-cnt">-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--            <div class="item-money">$10</div>-->
+    <!--          </b-col>-->
+    <!--          <b-col :span="6" class="hot-list-item">-->
+    <!--            <div class="item-thumb">-->
+    <!--              <img src="../../assets/popular4.jpg" alt="" />-->
+    <!--            </div>-->
+    <!--            <div class="item-detail">-->
+    <!--              <div class="instructor">$389</div>-->
+    <!--              <div class="item-title">-->
+    <!--                Machine Learning A-Z: Hands-On Python Data Science-->
+    <!--              </div>-->
+    <!--              <div class="detail-bottom">-->
+    <!--                <div class="detail-user">-->
+    <!--                  <i class="fa fa-user"></i-->
+    <!--                  ><span class="user-text">person</span>-->
+    <!--                </div>-->
+    <!--                <div class="stars-cnt">-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--            <div class="item-money">$10</div>-->
+    <!--          </b-col>-->
+    <!--        </b-row>-->
+    <!--        <b-row :gutter="30">-->
+    <!--          <b-col :span="6" class="hot-list-item">-->
+    <!--            <div class="item-thumb">-->
+    <!--              <img src="../../assets/popular5.jpg" alt="" />-->
+    <!--            </div>-->
+    <!--            <div class="item-detail">-->
+    <!--              <div class="instructor">$389</div>-->
+    <!--              <div class="item-title">-->
+    <!--                Machine Learning A-Z: Hands-On Python Data Science-->
+    <!--              </div>-->
+    <!--              <div class="detail-bottom">-->
+    <!--                <div class="detail-user">-->
+    <!--                  <i class="fa fa-user"></i-->
+    <!--                  ><span class="user-text">person</span>-->
+    <!--                </div>-->
+    <!--                <div class="stars-cnt">-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--            <div class="item-money">$10</div>-->
+    <!--          </b-col>-->
+    <!--          <b-col :span="6" class="hot-list-item">-->
+    <!--            <div class="item-thumb">-->
+    <!--              <img src="../../assets/popular6.jpg" alt="" />-->
+    <!--            </div>-->
+    <!--            <div class="item-detail">-->
+    <!--              <div class="instructor">$389</div>-->
+    <!--              <div class="item-title">-->
+    <!--                Machine Learning A-Z: Hands-On Python Data Science-->
+    <!--              </div>-->
+    <!--              <div class="detail-bottom">-->
+    <!--                <div class="detail-user">-->
+    <!--                  <i class="fa fa-user"></i-->
+    <!--                  ><span class="user-text">person</span>-->
+    <!--                </div>-->
+    <!--                <div class="stars-cnt">-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--            <div class="item-money">$10</div>-->
+    <!--          </b-col>-->
+    <!--          <b-col :span="6" class="hot-list-item">-->
+    <!--            <div class="item-thumb">-->
+    <!--              <img src="../../assets/popular7.jpg" alt="" />-->
+    <!--            </div>-->
+    <!--            <div class="item-detail">-->
+    <!--              <div class="instructor">$389</div>-->
+    <!--              <div class="item-title">-->
+    <!--                Machine Learning A-Z: Hands-On Python Data Science-->
+    <!--              </div>-->
+    <!--              <div class="detail-bottom">-->
+    <!--                <div class="detail-user">-->
+    <!--                  <i class="fa fa-user"></i-->
+    <!--                  ><span class="user-text">person</span>-->
+    <!--                </div>-->
+    <!--                <div class="stars-cnt">-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--            <div class="item-money">$10</div>-->
+    <!--          </b-col>-->
+    <!--          <b-col :span="6" class="hot-list-item">-->
+    <!--            <div class="item-thumb">-->
+    <!--              <img src="../../assets/popular8.jpg" alt="" />-->
+    <!--            </div>-->
+    <!--            <div class="item-detail">-->
+    <!--              <div class="instructor">$389</div>-->
+    <!--              <div class="item-title">-->
+    <!--                Machine Learning A-Z: Hands-On Python Data Science-->
+    <!--              </div>-->
+    <!--              <div class="detail-bottom">-->
+    <!--                <div class="detail-user">-->
+    <!--                  <i class="fa fa-user"></i-->
+    <!--                  ><span class="user-text">person</span>-->
+    <!--                </div>-->
+    <!--                <div class="stars-cnt">-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                  <i class="fa fa-star"></i>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--            <div class="item-money">$10</div>-->
+    <!--          </b-col>-->
+    <!--        </b-row>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    <div class="today-rank section-padding">-->
+    <!--      <div class="container">-->
+    <!--        <b-row :gutter="30">-->
+    <!--          <b-col :lg="12" :offset="6">-->
+    <!--            <div class="section-title-s2">-->
+    <!--              <h2>今日排行榜</h2>-->
+    <!--              <p>-->
+    <!--                Lorem Ipsum is simply dummy text of the printing and typesetting-->
+    <!--              </p>-->
+    <!--            </div>-->
+    <!--          </b-col>-->
+    <!--        </b-row>-->
+    <!--        <el-carousel height="550px">-->
+    <!--          <el-carousel-item v-for="item in 3" :key="item">-->
+    <!--            <b-row :gutter="30" class="mt15 rank-list">-->
+    <!--              <b-col :span="6" class="rank-item">-->
+    <!--                <div class="rank-title">-->
+    <!--                  <div class="rank-round color1">-->
+    <!--                    <i class="fa fa-star"></i>-->
+    <!--                  </div>-->
+    <!--                  <div class="rank-name">shoppings</div>-->
+    <!--                </div>-->
+    <!--                <ul class="rank-list-detail">-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+    <!--              </b-col>-->
+    <!--              <b-col :span="6" class="rank-item">-->
+    <!--                <div class="rank-title">-->
+    <!--                  <div class="rank-round color2">-->
+    <!--                    <i class="fa fa-star"></i>-->
+    <!--                  </div>-->
+    <!--                  <div class="rank-name">shoppings</div>-->
+    <!--                </div>-->
+    <!--                <ul class="rank-list-detail">-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+    <!--              </b-col>-->
+    <!--              <b-col :span="6" class="rank-item">-->
+    <!--                <div class="rank-title">-->
+    <!--                  <div class="rank-round color3">-->
+    <!--                    <i class="fa fa-star"></i>-->
+    <!--                  </div>-->
+    <!--                  <div class="rank-name">shoppings</div>-->
+    <!--                </div>-->
+    <!--                <ul class="rank-list-detail">-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+    <!--              </b-col>-->
+    <!--              <b-col :span="6" class="rank-item">-->
+    <!--                <div class="rank-title">-->
+    <!--                  <div class="rank-round color4">-->
+    <!--                    <i class="fa fa-star"></i>-->
+    <!--                  </div>-->
+    <!--                  <div class="rank-name">shoppings</div>-->
+    <!--                </div>-->
+    <!--                <ul class="rank-list-detail">-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+    <!--              </b-col>-->
+    <!--            </b-row>-->
+    <!--            <b-row :gutter="30" class="mt15 rank-list">-->
+    <!--              <b-col :span="6" class="rank-item">-->
+    <!--                <div class="rank-title">-->
+    <!--                  <div class="rank-round color5">-->
+    <!--                    <i class="fa fa-star"></i>-->
+    <!--                  </div>-->
+    <!--                  <div class="rank-name">shoppings</div>-->
+    <!--                </div>-->
+    <!--                <ul class="rank-list-detail">-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+    <!--              </b-col>-->
+    <!--              <b-col :span="6" class="rank-item">-->
+    <!--                <div class="rank-title">-->
+    <!--                  <div class="rank-round color6">-->
+    <!--                    <i class="fa fa-star"></i>-->
+    <!--                  </div>-->
+    <!--                  <div class="rank-name">shoppings</div>-->
+    <!--                </div>-->
+    <!--                <ul class="rank-list-detail">-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+    <!--              </b-col>-->
+    <!--              <b-col :span="6" class="rank-item">-->
+    <!--                <div class="rank-title">-->
+    <!--                  <div class="rank-round color7">-->
+    <!--                    <i class="fa fa-star"></i>-->
+    <!--                  </div>-->
+    <!--                  <div class="rank-name">shoppings</div>-->
+    <!--                </div>-->
+    <!--                <ul class="rank-list-detail">-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+    <!--              </b-col>-->
+    <!--              <b-col :span="6" class="rank-item">-->
+    <!--                <div class="rank-title">-->
+    <!--                  <div class="rank-round color8">-->
+    <!--                    <i class="fa fa-star"></i>-->
+    <!--                  </div>-->
+    <!--                  <div class="rank-name">shoppings</div>-->
+    <!--                </div>-->
+    <!--                <ul class="rank-list-detail">-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                  <li class="detail-item">-->
+    <!--                    <div class="item-name">name</div>-->
+    <!--                    <div class="item-tag">tags</div>-->
+    <!--                  </li>-->
+    <!--                </ul>-->
+    <!--              </b-col>-->
+    <!--            </b-row>-->
+    <!--          </el-carousel-item>-->
+    <!--        </el-carousel>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <home-portfolio />
+    <home-fun-fact />
+    <home-team />
+    <home-testimonial />
+    <home-partner />
+
+    <section class="blog-section section-padding">
       <div class="container">
-        <el-row :gutter='30'>
-          <el-col :lg='12' :offset='6'>
-            <div class='section-title-s2'>
-              <h2>今日排行榜</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-            </div>
-          </el-col>
-        </el-row>
-        <el-carousel height="550px">
-          <el-carousel-item v-for="item in 3" :key="item">
-            <el-row :gutter="30" class="mt15 rank-list">
-              <el-col :span="6" class="rank-item">
-                <div class="rank-title">
-                  <div class="rank-round color1"><i class="fa fa-star"></i></div>
-                  <div class="rank-name">shoppings</div>
-                </div>
-                <ul class="rank-list-detail">
-                  <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                </ul>
-              </el-col>
-              <el-col :span="6" class="rank-item">
-                <div class="rank-title">
-                  <div class="rank-round color2"><i class="fa fa-star"></i></div>
-                  <div class="rank-name">shoppings</div>
-                </div>
-                <ul class="rank-list-detail">
-                  <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                </ul>
-              </el-col>
-              <el-col :span="6" class="rank-item">
-                <div class="rank-title">
-                  <div class="rank-round color3"><i class="fa fa-star"></i></div>
-                  <div class="rank-name">shoppings</div>
-                </div>
-                <ul class="rank-list-detail">
-                  <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                </ul>
-              </el-col>
-              <el-col :span="6" class="rank-item">
-                <div class="rank-title">
-                  <div class="rank-round color4"><i class="fa fa-star"></i></div>
-                  <div class="rank-name">shoppings</div>
-                </div>
-                <ul class="rank-list-detail">
-                  <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                </ul>
-              </el-col>
-            </el-row>
-             <el-row :gutter="30" class="mt15 rank-list">
-              <el-col :span="6" class="rank-item">
-                <div class="rank-title">
-                  <div class="rank-round color5"><i class="fa fa-star"></i></div>
-                  <div class="rank-name">shoppings</div>
-                </div>
-                <ul class="rank-list-detail">
-                  <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                </ul>
-              </el-col>
-              <el-col :span="6" class="rank-item">
-                <div class="rank-title">
-                  <div class="rank-round color6"><i class="fa fa-star"></i></div>
-                  <div class="rank-name">shoppings</div>
-                </div>
-                <ul class="rank-list-detail">
-                  <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                </ul>
-              </el-col>
-              <el-col :span="6" class="rank-item">
-                <div class="rank-title">
-                  <div class="rank-round color7"><i class="fa fa-star"></i></div>
-                  <div class="rank-name">shoppings</div>
-                </div>
-                <ul class="rank-list-detail">
-                  <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                </ul>
-              </el-col>
-              <el-col :span="6" class="rank-item">
-                <div class="rank-title">
-                  <div class="rank-round color8"><i class="fa fa-star"></i></div>
-                  <div class="rank-name">shoppings</div>
-                </div>
-                <ul class="rank-list-detail">
-                  <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                   <li class="detail-item">
-                    <div class="item-name">name</div>
-                    <div class="item-tag">tags</div>
-                  </li>
-                </ul>
-              </el-col>
-            </el-row>
-          </el-carousel-item>
-        </el-carousel>
-      </div>
-    </div>
-    <section class='portfolio-section section-padding'>
-      <div class='container'>
-        <el-row :gutter='30'>
-          <el-col :lg='12' :offset='6'>
-            <div class='section-title-s2'>
-              <span>Recently Completed</span>
-              <h2>Our Projects</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry lorem Ipsum has been the industry's standard dummy text
-              </p>
-            </div>
-          </el-col>
-        </el-row>
-        <el-row :gutter='30'>
-          <el-col :span='24'>
-            <div class='portfolio-grids portfolio-slider'>
-              <div class='grid'>
-                <div class='img-holder'>
-                  <img src='../../assets/portfolio-img-1.jpg' alt />
-                  <div class='service-image-overlay'></div>
-                </div>
-                <div class='details'>
-                  <h3>
-                    <a href='#'>Residential</a>
-                  </h3>
-                  <p class='cat'>
-                    Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm
-                    tempor
-                  </p>
-                </div>
-              </div>
-              <div class='grid'>
-                <div class='img-holder'>
-                  <img src='../../assets/portfolio-img-2.jpg' alt />
-                  <div class='service-image-overlay'></div>
-                </div>
-                <div class='details'>
-                  <h3>
-                    <a href='#'>Commercial</a>
-                  </h3>
-                  <p class='cat'>
-                    Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm
-                    tempor
-                  </p>
-                </div>
-              </div>
-              <div class='grid'>
-                <div class='img-holder'>
-                  <img src='../../assets/portfolio-img-3.jpg' alt />
-                  <div class='service-image-overlay'></div>
-                </div>
-                <div class='details'>
-                  <h3>
-                    <a href='#'>Industrial</a>
-                  </h3>
-                  <p class='cat'>
-                    Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm
-                    tempor
-                  </p>
-                </div>
-              </div>
-              <div class='grid'>
-                <div class='img-holder'>
-                  <img src='../../assets/portfolio-img-1.jpg' alt />
-                  <div class='service-image-overlay'></div>
-                </div>
-                <div class='details'>
-                  <h3>
-                    <a href='#'>Commercial</a>
-                  </h3>
-                  <p class='cat'>
-                    Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm
-                    tempor
-                  </p>
-                </div>
-              </div>
-            </div>
-          </el-col>
-        </el-row>
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- start fun-fact-section -->
-    <section class='fun-fact-section'>
-      <div class='container'>
-        <el-row :gutter='30'>
-          <el-col>
-            <div class='fun-fact-grids clearfix'>
-              <div class='grid'>
-                <div class='info'>
-                  <h3>
-                    <span class='counter' data-count='500'>50</span>+
-                  </h3>
-                  <p>Finished Projects</p>
-                </div>
-              </div>
-              <div class='grid'>
-                <div class='info'>
-                  <h3>
-                    <span class='counter' data-count='250'>20</span>+
-                  </h3>
-                  <p>Years of Experience</p>
-                </div>
-              </div>
-              <div class='grid'>
-                <div class='info'>
-                  <h3>
-                    <span class='counter' data-count='15'>00</span>+
-                  </h3>
-                  <p>Awards winning</p>
-                </div>
-              </div>
-              <div class='grid'>
-                <div class='info'>
-                  <h3>
-                    <span class='counter' data-count='100'>00</span>%
-                  </h3>
-                  <p>Happy Clients</p>
-                </div>
-              </div>
-            </div>
-          </el-col>
-        </el-row>
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end fun-fact-section -->
-    <!-- start team-section -->
-    <section class='team-section'>
-      <div class='container'>
-        <el-row>
-          <el-col :lg='12' :offset='6'>
-            <div class='section-title-s2'>
-              <span>Team members</span>
-              <h2>Our Team</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry lorem Ipsum has been the industry's standard dummy text
-              </p>
-            </div>
-          </el-col>
-        </el-row>
-      </div>
-      <div class='content-area'>
-        <div class='team-grids team-slider'>
-          <div class='grid'>
-            <div class='inner'>
-              <div class='img-holder'>
-                <img src='../../assets/our-team1.jpg' alt />
-              </div>
-              <div class='details'>
-                <h4>Mr J. Walsh</h4>
-                <span>Our Staff</span>
-                <div class='social'>
-                  <ul>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-facebook'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-twitter-alt'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-linkedin'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-pinterest'></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='grid'>
-            <div class='inner'>
-              <div class='img-holder'>
-                <img src='../../assets/our-team2.jpg' alt />
-              </div>
-              <div class='details'>
-                <h4>Mr D. Adams</h4>
-                <span>Our Staff</span>
-                <div class='social'>
-                  <ul>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-facebook'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-twitter-alt'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-linkedin'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-pinterest'></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='grid'>
-            <div class='inner'>
-              <div class='img-holder'>
-                <img src='../../assets/our-team3.jpg' alt />
-              </div>
-              <div class='details'>
-                <h4>Mr J. Ace</h4>
-                <span>Our Staff</span>
-                <div class='social'>
-                  <ul>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-facebook'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-twitter-alt'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-linkedin'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-pinterest'></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='grid'>
-            <div class='inner'>
-              <div class='img-holder'>
-                <img src='../../assets/our-team4.jpg' alt />
-              </div>
-              <div class='details'>
-                <h4>Mr G. Newman</h4>
-                <span>Our Staff</span>
-                <div class='social'>
-                  <ul>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-facebook'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-twitter-alt'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-linkedin'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-pinterest'></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='grid'>
-            <div class='inner'>
-              <div class='img-holder'>
-                <img src='../../assets/our-team5.jpg' alt />
-              </div>
-              <div class='details'>
-                <h4>Mr G.Mulan dow</h4>
-                <span>Our Staff</span>
-                <div class='social'>
-                  <ul>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-facebook'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-twitter-alt'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-linkedin'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-pinterest'></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='grid'>
-            <div class='inner'>
-              <div class='img-holder'>
-                <img src='../../assets/our-team6.jpg' alt />
-              </div>
-              <div class='details'>
-                <h4>Mr J. Walsh</h4>
-                <span>Our Staff</span>
-                <div class='social'>
-                  <ul>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-facebook'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-twitter-alt'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-linkedin'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#'>
-                        <i class='ti-pinterest'></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end team-section -->
-    <!-- start testimonial-section -->
-    <section class='testimonial-section'>
-      <div class='container'>
-        <!-- Sec Title -->
-        <div class='section-title-s2'>
-          <span>Client Testimonials</span>
-          <h2>Service Recipient Says</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry lorem Ipsum has been the industry's standard dummy text
-          </p>
-        </div>
-        <div class='testimonials-carousel owl-carousel owl-theme'>
-          <!-- Testimonial Block -->
-          <div class='testimonials-item'>
-            <h2>Awesome Service</h2>
-            <div class='testimonials-stars'>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-            </div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry lorem Ipsum has been the industry's standard dummy texty
-            </p>
-            <img alt src='../../assets/testimonials1.png' />
-            <h3>
-              Kolis Muller
-              <br />
-              <span>USA Citizen</span>
-            </h3>
-          </div>
-
-          <!-- Testimonial Block -->
-          <div class='testimonials-item'>
-            <h2>Awesome Service</h2>
-            <div class='testimonials-stars'>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-            </div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry lorem Ipsum has been the industry's standard dummy texty
-            </p>
-            <img alt src='../../assets/testimonials2.png' />
-            <h3>
-              Kolis Muller
-              <br />
-              <span>USA Citizen</span>
-            </h3>
-          </div>
-
-          <!-- Testimonial Block -->
-          <div class='testimonials-item'>
-            <h2>Awesome Service</h2>
-            <div class='testimonials-stars'>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-            </div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry lorem Ipsum has been the industry's standard dummy texty
-            </p>
-            <img alt src='../../assets/testimonials1.png' />
-            <h3>
-              Kolis Muller
-              <br />
-              <span>USA Citizen</span>
-            </h3>
-          </div>
-          <!-- Testimonial Block -->
-          <div class='testimonials-item'>
-            <h2>Awesome Service</h2>
-            <div class='testimonials-stars'>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-              <span class='icon'>
-                <i class='fa fa-star'></i>
-              </span>
-            </div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry lorem Ipsum has been the industry's standard dummy texty
-            </p>
-            <img alt src='../../assets/testimonials2.png' />
-            <h3>
-              Kolis Muller
-              <br />
-              <span>USA Citizen</span>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end testimonial-section -->
-    <!-- start partners-section -->
-    <section class='partners-section'>
-      <h2 class='hidden'>Partners</h2>
-      <div class='container'>
-        <div class='row'>
-          <div class='col col-xs-12'>
-            <div class='partner-grids partners-slider'>
-              <div class='grid'>
-                <img src='../../assets/partner-logo1.jpg' alt />
-              </div>
-              <div class='grid'>
-                <img src='../../assets/partner-logo2.jpg' alt />
-              </div>
-              <div class='grid'>
-                <img src='../../assets/partner-logo3.jpg' alt />
-              </div>
-              <div class='grid'>
-                <img src='../../assets/partner-logo4.jpg' alt />
-              </div>
-              <div class='grid'>
-                <img src='../../assets/partner-logo5.jpg' alt />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end partners-section -->
-    <!-- start blog-section -->
-    <section class='blog-section section-padding'>
-      <div class='container'>
-        <div class='row'>
-          <div
-            class='col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'
-          >
-            <div class='section-title-s2'>
+        <b-row class="row">
+          <b-col :lg="6" :offset="3">
+            <div class="section-title-s2">
               <span>Recent inside</span>
               <h2>Blog & Articles</h2>
               <p>
@@ -983,35 +468,32 @@
                 industry lorem Ipsum has been the industry's standard dummy text
               </p>
             </div>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col col-xs-12'>
-            <div class='blog-grids clearfix'>
-              <div class='grid'>
-                <div class='img-cat'>
-                  <div class='img-holder'>
-                    <img src='../../assets/blog-img-1.jpg' alt />
+          </b-col>
+        </b-row>
+        <div class="row">
+          <div class="col col-xs-12">
+            <div class="blog-grids clearfix">
+              <div class="grid">
+                <div class="img-cat">
+                  <div class="img-holder">
+                    <img src="../../assets/blog-img-1.jpg" alt />
                   </div>
                 </div>
-                <div class='details'>
+                <div class="details">
                   <h3>
-                    <a href='#'>
-                      Lorem ipsum dolor site nec amet consec adipiscing
-                      elite.
+                    <a href="#">
+                      Lorem ipsum dolor site nec amet consec adipiscing elite.
                     </a>
                   </h3>
-                  <div class='meta'>
-                    <div class='author'>
-                      <a href='#'>
-                        <img src='../../assets/blog-author-img1.png' alt /> Mich
+                  <div class="meta">
+                    <div class="author">
+                      <a href="#">
+                        <img src="../../assets/blog-author-img1.png" alt /> Mich
                         Jhon
                       </a>
                     </div>
-                    <div class='comment'>
-                      <a href='#'>
-                        <i class='ti-comment-alt'></i> 3
-                      </a>
+                    <div class="comment">
+                      <a href="#"> <i class="ti-comment-alt"></i> 3 </a>
                     </div>
                   </div>
                   <p>
@@ -1019,33 +501,30 @@
                     since the 1500s, when an unknown printer took a galley of
                     type and scrambled it to make a type specimen book.
                   </p>
-                  <a href='#' class='theme-btn one'>Read More</a>
+                  <a href="#" class="theme-btn one">Read More</a>
                 </div>
               </div>
-              <div class='grid'>
-                <div class='img-cat'>
-                  <div class='img-holder'>
-                    <img src='../../assets/blog-img-2.jpg' alt />
+              <div class="grid">
+                <div class="img-cat">
+                  <div class="img-holder">
+                    <img src="../../assets/blog-img-2.jpg" alt />
                   </div>
                 </div>
-                <div class='details'>
+                <div class="details">
                   <h3>
-                    <a href='#'>
-                      Lorem ipsum dolor site nec amet consec adipiscing
-                      elite.
+                    <a href="#">
+                      Lorem ipsum dolor site nec amet consec adipiscing elite.
                     </a>
                   </h3>
-                  <div class='meta'>
-                    <div class='author'>
-                      <a href='#'>
-                        <img src='../../assets/blog-author-img2.png' alt /> Mich
+                  <div class="meta">
+                    <div class="author">
+                      <a href="#">
+                        <img src="../../assets/blog-author-img2.png" alt /> Mich
                         Jhon
                       </a>
                     </div>
-                    <div class='comment'>
-                      <a href='#'>
-                        <i class='ti-comment-alt'></i> 3
-                      </a>
+                    <div class="comment">
+                      <a href="#"> <i class="ti-comment-alt"></i> 3 </a>
                     </div>
                   </div>
                   <p>
@@ -1053,33 +532,30 @@
                     since the 1500s, when an unknown printer took a galley of
                     type and scrambled it to make a type specimen book.
                   </p>
-                  <a href='#' class='theme-btn one'>Read More</a>
+                  <a href="#" class="theme-btn one">Read More</a>
                 </div>
               </div>
-              <div class='grid'>
-                <div class='img-cat'>
-                  <div class='img-holder'>
-                    <img src='../../assets/blog-img-3.jpg' alt />
+              <div class="grid">
+                <div class="img-cat">
+                  <div class="img-holder">
+                    <img src="../../assets/blog-img-3.jpg" alt />
                   </div>
                 </div>
-                <div class='details'>
+                <div class="details">
                   <h3>
-                    <a href='#'>
-                      Lorem ipsum dolor site nec amet consec adipiscing
-                      elite.
+                    <a href="#">
+                      Lorem ipsum dolor site nec amet consec adipiscing elite.
                     </a>
                   </h3>
-                  <div class='meta'>
-                    <div class='author'>
-                      <a href='#'>
-                        <img src='../../assets/blog-author-img3.png' alt /> Mich
+                  <div class="meta">
+                    <div class="author">
+                      <a href="#">
+                        <img src="../../assets/blog-author-img3.png" alt /> Mich
                         Jhon
                       </a>
                     </div>
-                    <div class='comment'>
-                      <a href='#'>
-                        <i class='ti-comment-alt'></i> 3
-                      </a>
+                    <div class="comment">
+                      <a href="#"> <i class="ti-comment-alt"></i> 3 </a>
                     </div>
                   </div>
                   <p>
@@ -1087,7 +563,7 @@
                     since the 1500s, when an unknown printer took a galley of
                     type and scrambled it to make a type specimen book.
                   </p>
-                  <a href='#' class='theme-btn one'>Read More</a>
+                  <a href="#" class="theme-btn one">Read More</a>
                 </div>
               </div>
             </div>
@@ -1102,18 +578,23 @@
 
 <script>
 import HomeSwiper from '@/components/HomeSwiper/index'
+import HomeFeatures from '@/views/home/components/HomeFeatures/index'
+import HomePortfolio from '@/views/home/components/HomePortfolio/index'
+import HomeFunFact from '@/views/home/components/HomeFunFact/index'
+import HomeTeam from '@/views/home/components/HomeTeam/HomeTeam'
+import HomePartner from '@/views/home/components/HomePartners/index'
+import HomeTestimonial from '@/views/home/components/HomeTestimonial/index'
 
 export default {
-  beforeRouteEnter(to, from, next) {
-    if (from.name !== 'home' && from.name !== null) {
-      setTimeout(() => {
-        console.log(from.name)
-        location.reload()
-      }, 200)
-    }
-    next()
+  components: {
+    HomeTestimonial,
+    HomePartner,
+    HomeTeam,
+    HomeFunFact,
+    HomePortfolio,
+    HomeFeatures,
+    HomeSwiper
   },
-  components: { HomeSwiper },
   data() {
     return {
       reload: true

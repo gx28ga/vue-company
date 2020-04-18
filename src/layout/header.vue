@@ -1,43 +1,43 @@
 <template>
   <header class="header">
-    <div class="container clearfix">
-      <router-link to="/" tag="h1">
-        <img src="../assets/logo.png" class="site-logo" />
-      </router-link>
-      <div class="head-nav">
-        <ul class="head-nav-nav">
-          <li class="active"><router-link tag="a" to="/">首页</router-link></li>
-          <li><router-link tag="a" to="/about">产品</router-link></li>
-          <li class="menu-item-has-children">
-            <a href="#">解决方案</a>
-            <ul class="sub-menu">
-              <li><a>文字</a></li>
-            </ul>
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">行业报告</a>
-            <ul class="sub-menu">
-              <li><a>文字</a></li>
-            </ul>
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">学院</a>
-            <ul class="sub-menu">
-              <li><a>文字</a></li>
-            </ul>
-          </li>
-          <li><router-link tag="a" to="/about">关于我们</router-link></li>
-          <li><router-link tag="a" to="/list">列表</router-link></li>
-          <li><router-link tag="a" to="/detail">详情</router-link></li>
-        </ul>
-      </div>
+    <!--    <div class="container clearfix">-->
+    <!--      <router-link to="/" tag="h1">-->
+    <!--        <img src="../assets/logo.png" class="site-logo" />-->
+    <!--      </router-link>-->
+    <!--      <div class="head-nav">-->
+    <!--        <ul class="head-nav-nav">-->
+    <!--          <li class="active"><router-link tag="a" to="/">首页</router-link></li>-->
+    <!--          <li><router-link tag="a" to="/about">产品</router-link></li>-->
+    <!--          <li class="menu-item-has-children">-->
+    <!--            <a href="#">解决方案</a>-->
+    <!--            <ul class="sub-menu">-->
+    <!--              <li><a>文字</a></li>-->
+    <!--            </ul>-->
+    <!--          </li>-->
+    <!--          <li class="menu-item-has-children">-->
+    <!--            <a href="#">行业报告</a>-->
+    <!--            <ul class="sub-menu">-->
+    <!--              <li><a>文字</a></li>-->
+    <!--            </ul>-->
+    <!--          </li>-->
+    <!--          <li class="menu-item-has-children">-->
+    <!--            <a href="#">学院</a>-->
+    <!--            <ul class="sub-menu">-->
+    <!--              <li><a>文字</a></li>-->
+    <!--            </ul>-->
+    <!--          </li>-->
+    <!--          <li><router-link tag="a" to="/about">关于我们</router-link></li>-->
+    <!--          <li><router-link tag="a" to="/list">列表</router-link></li>-->
+    <!--          <li><router-link tag="a" to="/detail">详情</router-link></li>-->
+    <!--        </ul>-->
+    <!--      </div>-->
 
-      <div class="cart-contact">
-        <div class="contact-btn hidden-xs">
-          <a href="#" class="theme-btn">城市合伙人</a>
-        </div>
-      </div>
-    </div>
+    <!--      <div class="cart-contact">-->
+    <!--        <div class="contact-btn hidden-xs">-->
+    <!--          <a href="#" class="theme-btn">城市合伙人</a>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
   </header>
 </template>
 

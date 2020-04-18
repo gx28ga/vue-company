@@ -1113,7 +1113,7 @@ img {
 .hero-slider .swiper-button-prev {
   left: 25px;
 }
-.hero-slider .swiper-button-prev:before {
+.hero-slider .swiper-button-prev:after {
   font-family: 'Flaticon';
   content: '\f106';
   font-size: 20px;
@@ -1122,7 +1122,7 @@ img {
 .hero-slider .swiper-button-next {
   right: 25px;
 }
-.hero-slider .swiper-button-next:before {
+.hero-slider .swiper-button-next:after {
   font-family: 'Flaticon';
   content: '\f103';
   font-size: 20px;
@@ -1674,34 +1674,27 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  .portfolio-section .owl-controls,
-  .portfolio-section-s2 .owl-controls {
+  .portfolio-section .tns-controls,
+  .portfolio-section-s2 .tns-controls {
     width: 100%;
     height: 60px;
     margin: 0;
     position: absolute;
     left: 0;
     top: 45%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    z-index: 1;
   }
 }
 
 @media (max-width: 991px) {
-  .portfolio-section .owl-controls,
-  .portfolio-section-s2 .owl-controls {
+  .portfolio-section .tns-controls,
+  .portfolio-section-s2 .tns-controls {
     margin-top: 45px;
   }
 }
-.portfolio-section .owl-controls .owl-dots,
-.portfolio-section-s2 .owl-controls .owl-dots {
-  display: none !important;
-}
-.portfolio-section .owl-theme .owl-controls .owl-nav [class*='owl-'],
-.portfolio-section-s2 .owl-theme .owl-controls .owl-nav [class*='owl-'] {
+.portfolio-section .tns-controls button,
+.portfolio-section-s2 .tns-controls button {
   width: 55px;
   height: 55px;
   line-height: 55px;
@@ -1710,31 +1703,26 @@ img {
   color: #423f3f;
   margin: 5px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 3px 12.96px 3.04px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 3px 12.96px 3.04px rgba(0, 0, 0, 0.06);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
   transition: all 0.3s;
-}
-.portfolio-section .owl-theme .owl-controls .owl-nav [class*='owl-']:hover,
-.portfolio-section-s2 .owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
-  background: #f47425;
-  color: #fff;
+  &:hover {
+    background: #f47425;
+    color: #fff;
+  }
 }
 
+
 @media screen and (min-width: 992px) {
-  .portfolio-section .owl-theme .owl-controls .owl-nav [class*='owl-'],
-  .portfolio-section-s2 .owl-theme .owl-controls .owl-nav [class*='owl-'] {
+  .portfolio-section .tns-controls button,
+  .portfolio-section-s2 .tns-controls button {
     position: absolute;
     top: 0;
   }
 }
 
 @media (max-width: 991px) {
-  .portfolio-section .owl-theme .owl-controls .owl-nav [class*='owl-'],
-  .portfolio-section-s2 .owl-theme .owl-controls .owl-nav [class*='owl-'] {
+  .portfolio-section .tns-controls button,
+  .portfolio-section-s2 .tns-controls button {
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -1743,15 +1731,15 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  .portfolio-section .owl-theme .owl-controls .owl-nav .owl-prev,
-  .portfolio-section-s2 .owl-theme .owl-controls .owl-nav .owl-prev {
+  .portfolio-section .tns-controls button:first-child,
+  .portfolio-section-s2 .tns-controls button:first-child {
     left: -32px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .portfolio-section .owl-theme .owl-controls .owl-nav .owl-next,
-  .portfolio-section-s2 .owl-theme .owl-controls .owl-nav .owl-next {
+  .portfolio-section .tns-controls button:last-child,
+  .portfolio-section-s2 .tns-controls button:last-child {
     right: -32px;
   }
 }
@@ -1926,18 +1914,20 @@ img {
 .team-section .social {
   margin: 15px 0 0;
 }
-.team-section .owl-controls {
+.team-section .tns-controls {
   margin-top: 30px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
-  .team-section .owl-controls,
-  .team-section-s2 .owl-controls {
+  .team-section .tns-controls,
+  .team-section-s2 .tns-controls {
     margin-top: 45px;
   }
 }
-.team-section .owl-theme .owl-controls .owl-nav [class*='owl-'],
-.team-section-s2 .owl-theme .owl-controls .owl-nav [class*='owl-'] {
+.team-section .tns-controls button,
+.team-section-s2 .tns-controls button {
+  display: inline-block;
   width: 50px;
   height: 50px;
   line-height: 47px;
@@ -1952,42 +1942,41 @@ img {
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
-}
-.team-section .owl-theme .owl-controls .owl-nav [class*='owl-']:hover,
-.team-section-s2 .owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
-  background: #f47425;
-  border-color: #f47425;
-  color: #fff;
+  &:hover {
+    background: #f47425;
+    border-color: #f47425;
+    color: #fff;
+  }
 }
 
 @media (max-width: 991px) {
-  .team-section .owl-theme .owl-controls .owl-nav [class*='owl-'],
-  .team-section-s2 .owl-theme .owl-controls .owl-nav [class*='owl-'] {
+  .team-section .tns-controls button,
+  .team-section-s2 .tns-controls button {
     width: 45px;
     height: 45px;
     line-height: 45px;
     border-radius: 0;
   }
 }
-.team-section .owl-theme .owl-controls .owl-nav .owl-prev,
-.team-section-s2 .owl-theme .owl-controls .owl-nav .owl-prev {
+.team-section .tns-controls button:first-child,
+.team-section-s2 .tns-controls button:first-child {
   border-left: 0;
 }
 
 @media screen and (min-width: 992px) {
-  .team-section .owl-theme .owl-controls .owl-nav .owl-prev,
-  .team-section-s2 .owl-theme .owl-controls .owl-nav .owl-prev {
+  .team-section .tns-controls button:first-child,
+  .team-section-s2 .tns-controls button:first-child {
     left: 15px;
   }
 }
-.team-section .owl-theme .owl-controls .owl-nav .owl-next,
-.team-section-s2 .owl-theme .owl-controls .owl-nav .owl-next {
+.team-section .tns-controls button:last-child,
+.team-section-s2 .owl-theme .tns-controls button:last-child {
   border-right: 0;
 }
 
 @media screen and (min-width: 992px) {
-  .team-section .owl-theme .owl-controls .owl-nav .owl-next,
-  .team-section-s2 .owl-theme .owl-controls .owl-nav .owl-next {
+  .team-section .tns-controls button:last-child,
+  .team-section-s2 .tns-controls button:last-child {
     right: 15px;
   }
 }
@@ -2062,7 +2051,7 @@ img {
   font-size: 17px;
   font-size: 1.0625rem;
   color: #f47425;
-  margin: 0 0.5px;
+  margin: 0 3px;
 }
 .testimonial-section .testimonials-item p {
   font-size: 15px;
