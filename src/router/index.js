@@ -32,6 +32,14 @@ const routes = [
     props: {
       userAction: 'forgotPassword'
     }
+  },
+  {
+    path: '/changePassword',
+    name: 'changePassword',
+    component: () => import('@/views/signupOrlogin'),
+    props: {
+      userAction: 'changePassword'
+    }
   }
 ]
 

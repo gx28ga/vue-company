@@ -19,6 +19,7 @@
               <h3 v-if="userAction === 'login'">登录账户</h3>
               <h3 v-if="userAction === 'signup'">新建账户</h3>
               <h3 v-if="userAction === 'forgotPassword'">找回密码</h3>
+              <h3 v-if="userAction === 'changePassword'">修改密码</h3>
               <!-- Form start-->
               <form
                 v-if="userAction === 'login'"
@@ -49,6 +50,7 @@
                     </label>
                   </div>
                   <router-link to="forgotPassword">忘记密码</router-link>
+                  <router-link to="changePassword">修改密码</router-link>
                   <div class="clearfix"></div>
                 </div>
                 <div class="form-group mb-0">
@@ -116,6 +118,41 @@
                 <div class="form-group mb-0">
                   <button type="submit" class="btn-md button-theme btn-block">
                     发送密码到手机
+                  </button>
+                </div>
+              </form>
+              <form
+                v-if="userAction === 'changePassword'"
+                action="index.html"
+                method="GET"
+              >
+                <div class="form-group">
+                  <input
+                    type="number"
+                    name="phone"
+                    class="input-text"
+                    placeholder="请输入手机号码"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    name="password"
+                    class="input-text"
+                    placeholder="请输入新密码"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    name="confirm_Password"
+                    class="input-text"
+                    placeholder="请再次输入新密码"
+                  />
+                </div>
+                <div class="form-group mb-0">
+                  <button type="submit" class="btn-md button-theme btn-block">
+                    修改密码
                   </button>
                 </div>
               </form>
