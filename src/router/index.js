@@ -12,12 +12,26 @@ const routes = [
   {
     path: '/signup',
     name: 'signup',
-    component: () => import('@/views/signup')
+    component: () => import('@/views/signupOrlogin'),
+    props: {
+      userAction: 'signup'
+    }
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import('@/views/login')
+    component: () => import('@/views/signupOrlogin'),
+    props: {
+      userAction: 'login'
+    }
+  },
+  {
+    path: '/forgotPassword',
+    name: 'forgotPassword',
+    component: () => import('@/views/signupOrlogin'),
+    props: {
+      userAction: 'forgotPassword'
+    }
   }
 ]
 
