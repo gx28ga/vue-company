@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <layout-header />
+<!--    <layout-header />-->
     <router-view />
-    <layout-footer />
+<!--    <layout-footer />-->
   </div>
 </template>
 <script>
-import LayoutHeader from './layout/header'
-import LayoutFooter from '@/layout/footer'
+// import LayoutHeader from './layout/header'
+// import LayoutFooter from '@/layout/footer'
 export default {
-  components: { LayoutFooter, LayoutHeader }
+  // components: { LayoutFooter, LayoutHeader }
 }
 </script>

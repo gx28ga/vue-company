@@ -1,24 +1,41 @@
 @charset "UTF-8";
-@import 'reset';
-@import 'themify-icons.css';
-@import '~@/styles/flaticon/flaticon.css';
-@import 'font-awesome/css/font-awesome.min.css';
-@import 'flaticon/flaticon.css';
-@import "style";
-.tns-outer {
-  position: relative;
-}
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+@import "font-awesome/css/font-awesome.min.css";
+@import "themify-icons/css/themify-icons.css";
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Satisfy');
+@import "vars";
+@import "helper";
+@import "theme-default";
 
-.tns-controls{
-  &:focus {
-    outline: none;
-  }
-}
+//@import 'reset';
+//@import 'themify-icons.css';
+//@import '~@/styles/flaticon/flaticon.css';
+//@import 'font-awesome/css/font-awesome.min.css';
+//@import 'flaticon/flaticon.css';
+//@import "style";
 
-.tns-controls button {
-  outline: none;
-}
-.tns-item img {
-  width: 100%;
-  transform-style: preserve-3d;
-}
+
+
+//.container-fluid {
+//  max-width: 1800px;
+//}
+
+//.tns-outer {
+//  position: relative;
+//}
+//
+//.tns-controls{
+//  &:focus {
+//    outline: none;
+//  }
+//}
+//
+//.tns-controls button {
+//  outline: none;
+//}
+//.tns-item img {
+//  width: 100%;
+//  transform-style: preserve-3d;
+//}
+

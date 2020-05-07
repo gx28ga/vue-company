@@ -1,0 +1,53 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+$theme-color: #e23e1d;
+$text-color-lighter: #999591;
+$text-color: #4c4c4c;
+$text-color-darker:#252525;
+$text-color-darkest:#191919;
+$rating-color: #fac451;
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-font-family: 'Rubik', 'SF Pro SC', 'SF Pro Text', 'SF Pro Icons',
+  'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', 'Microsoft YaHei',
+  'SimSun', sans-serif;
+$body-color: $text-color;
+$body-font-size: 14px;
+$body-line-height: 26px;
+
+// Links
+//
+// Style anchor elements.
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$headings-color: $text-color-darkest;
+$headings-font-weight: 500;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-fluid-max-width: 1800px;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-color1: #ebebeb;
+$border-style1: 1px solid $border-color1;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $theme-color;
+$link-decoration: none;
+$link-hover-decoration:  none;

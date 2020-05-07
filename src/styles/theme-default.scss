@@ -1,0 +1,21 @@
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+body {
+  font-family: $body-font-family;
+  font-size:$body-font-size;
+  line-height:$body-line-height;
+  color: $body-color;
+  font-weight:$font-weight-base;
+  overflow-x:hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $body-font-family;
+  font-weight:$headings-font-weight;
+  color: $headings-color;
+}
+.container-fluid {
+  max-width: $container-fluid-max-width;
+}
+
